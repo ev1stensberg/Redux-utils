@@ -13,3 +13,12 @@ to see if your dispatched action is what you expected it to be, returns undefine
 
 Checks your action and if its not what it assigned to be, returns your current state instead.
 (Swap out "INCREMENTAL" with your own action type in the code)
+
+#Misc
+
+```javascript
+case 'TOGGLE_TODO':
+    return state.map(t =>
+     todo(t, action, [console.log(t)])
+    )
+```
